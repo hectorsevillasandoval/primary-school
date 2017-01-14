@@ -1,0 +1,29 @@
+{
+  "name": "primary-school",
+  "version": "1.0.0",
+  "description": "Template for primary school",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.18.6",
+    "gulp-postcss": "^6.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barcadictni/primary-school.git"
+  },
+  "author": "Hector Sevilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barcadictni/primary-school/issues"
+  },
+  "homepage": "https://github.com/barcadictni/primary-school"
+}
