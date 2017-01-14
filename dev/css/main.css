@@ -1,0 +1,6 @@
+.test{
+	font-family: Montserrat;
+	&-hola{
+		display: block;
+	}
+}
