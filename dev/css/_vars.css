@@ -1,0 +1,11 @@
+:root{
+	--yellow: #e4bc1b;
+	--blue: #18479d;
+	--textColor: #232123;
+}
+
+/* -- Custom Media queries */
+@custom-media --tablet (min-width: 500px);
+/*@custom-media --tablet (max-width: 650px);*/
+@custom-media --desktop (min-width: 800px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2);
