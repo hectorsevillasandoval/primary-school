@@ -31,8 +31,8 @@ gulp.task('css', function() {
       lost(),
       rucksack(),
       cssnext({ browsers: ['> 5%','ie 8'] }),
-      mqpacker,
-      csswring()
+      mqpacker({ sort: true})/*,
+      csswring()*/
     ];
 
     return gulp.src('./dev/css/main.css')
