@@ -93,3 +93,91 @@ a{
 		}
 	}
 }
+
+/*
+*	MAIN CONTAINER
+*/
+
+.main{
+	&__container{
+		@media (--desktop){
+			lost-center:1148px no-flex;
+		}
+	}
+	&__headline{
+		font-family: 'Roboto Slab';
+		&two{
+			font-family: 'Gochi Hand';	
+		}
+	}
+
+	&__board{
+		lost-center:100%;
+		
+		&slider{
+			lost-column:1/1;
+			box-sizing: border-box;
+			@media (--desktop){
+				lost-column:1/2;
+			}
+		}
+
+		&newsboard{
+			lost-column:1/1;
+			@media (--desktop){
+				lost-column:1/2;
+			}	
+		}
+	}
+
+	&__homeicons{
+		lost-center:100%;
+	}
+	&__icon{
+		lost-column: 1/1;
+		
+		@media (--tablet){
+			lost-column:1/2;
+		}
+		@media (--desktop){
+			lost-column:1/4;
+		}
+	}
+	&__img{
+		max-width: 100%;
+		height: auto;
+	}
+	&__boardnewsboard{
+		background-image: url(../images/news-board-background.png);
+	}
+
+	/*Modifiers*/
+	&--center{
+		text-align: center;
+	}
+	&--bgslider{
+		background-image: url(../images/slider-background-transparent.png);
+		background-size: contain;
+		padding: 2.2rem 1.3rem 2rem 3.6rem;
+	}
+	&--blue{
+		color:var(--blue);
+	}
+	&--pink{
+		color: var(--pink);
+	}
+	&--bigtitle{
+		font-size: responsive 24px 30px;
+	}
+	&--norepeat{
+		background-repeat: no-repeat;
+	}
+	&--welcome{
+		display: block;
+		font-family: 'Roboto';
+		font-size: 18px;
+		color:#000;
+		text-transform: uppercase;
+		padding-bottom: 1rem;
+	}
+}
