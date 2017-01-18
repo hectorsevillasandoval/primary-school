@@ -1,8 +1,11 @@
 :root{
-	--yellow: #e4bc1b;
+	--yellow: #c7df17;
 	--blue: #18479d;
 	--textColor: #232123;
 	--pink:#d63db5;
+	--lightblue: #24e4b7;
+	--orange: #e4bc1b;
+	--gray:#a7a6a7;
 }
 
 /* -- Custom Media queries */
