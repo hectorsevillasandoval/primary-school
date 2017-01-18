@@ -467,9 +467,9 @@ template {
 body{
 	font-size: 16px;
 	color: #232123;
-background: -webkit-linear-gradient(#c4f1ff 0%, #e5e5e5 100%);
-background: -webkit-linear-gradient(rgba(196, 241, 255, 1) 0%, rgba(229, 229, 229, 0) 100%);
-background: linear-gradient(rgba(196, 241, 255, 1) 0%, rgba(229, 229, 229, 0) 100%);
+    background: -webkit-linear-gradient(#c4f1ff 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(rgba(196, 241, 255, 1) 0%, rgba(229, 229, 229, 0) 100%);
+    background: linear-gradient(rgba(196, 241, 255, 1) 0%, rgba(229, 229, 229, 0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4f1ff', endColorstr='rgba(0, 229, 229, 0.89804)',GradientType=0 );
 	background-repeat: no-repeat;
 	background-position: top center;
