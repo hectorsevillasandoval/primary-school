@@ -1,6 +1,6 @@
 :root{
 	--yellow: #c7df17;
-	--blue: #18479d;
+	--blue: #0045A1;
 	--textColor: #232123;
 	--pink:#d63db5;
 	--lightblue: #24e4b7;
@@ -12,4 +12,5 @@
 @custom-media --tablet (min-width: 500px);
 /*@custom-media --tablet (max-width: 650px);*/
 @custom-media --desktop (min-width: 800px);
+@custom-media --huge (min-width: 1200px);
 @custom-media --retina (-webkit-min-device-pixel-ratio: 2);
