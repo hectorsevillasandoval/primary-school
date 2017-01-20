@@ -1,5 +1,6 @@
 @import "./_normalize.css";
 @import "./_vars.css";
+@import "./flexslider.css";
 
 @lost flexbox flex;
 
@@ -429,6 +430,7 @@ a{
 	margin-top: 15rem;
 	position: relative;
 	color:white;
+	lost-center:100%;
 	& a{
 		color:white;
 	}
@@ -436,7 +438,7 @@ a{
 		content:"";
 		position: absolute;
 		background-image: url(../images/footer-background.png);
-		top:-12rem;
+		top:-13rem;
 		left:0;
 		right: 0;
 		width: 100%;
@@ -753,4 +755,38 @@ a{
 			
 		}
 	}
+}
+
+/* Single Gallery */
+
+.gallery-single{
+	&__container{
+		lost-center:100% no-flex;
+		background-image: url(../images/slider-bg-big.png);
+		padding: 2.3rem;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		background-size: contain;
+		
+	}
+	&__slider{
+		max-width: 954px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__carousel{
+			li{
+				background-color: var(--green);
+			}
+			img{
+				opacity: .4;
+			}
+			.flex-active-slide img{
+				opacity: 1;
+			}
+		}
+	&__custom-controls-container{
+
+	} 
 }
