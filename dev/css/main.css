@@ -76,6 +76,9 @@ a{
 		}
 		&--pay{
 			background-color: var(--blue);
+			& a:hover{
+				color:white;
+			}
 		}
 	}
 	&-container{
@@ -142,6 +145,9 @@ a{
 						& a{
 							color:white;
 							width: 90px;
+							&:hover{
+								color:var(--yellow);
+							}
 						}
 					}
 					
@@ -174,22 +180,23 @@ a{
 		margin-bottom: 4rem;
 	}
 	&__board{
-		lost-center:100%;
-		
-		&slider{
-			lost-column:1/1;
+		lost-center:100% no-flex;
+		lost-utility: clearfix;
+		&newsboard{
+			lost-column:1/1 no-flex;
 			box-sizing: border-box;
 			@media (--desktop){
-				lost-column:1/2;
+				lost-column:1/2  no-flex;
+			}	
+		}
+		&slider{
+			lost-column:1/1  no-flex;
+			box-sizing: border-box;
+			@media (--desktop){
+				lost-column:1/2  no-flex;
 			}
 		}
 
-		&newsboard{
-			lost-column:1/1;
-			@media (--desktop){
-				lost-column:1/2;
-			}	
-		}
 	}
 
 	&__homeicons{
@@ -476,6 +483,10 @@ a{
 	}
 	&__title{
 		color:white;
+		text-align: center;
+		@media (--desktop){
+			text-align: left;
+		}
 	}
 	&__phone-link{
 		&:before{
@@ -516,6 +527,15 @@ a{
 	&__copy-text{
 		font-size: 14px;
 		text-align: center;
+	}
+	&__menu{
+		text-align: left;
+	}
+	&__contact-info{
+		text-align: left;
+	}
+	&__address-p{
+		text-align: left;
 	}
 	&__social{
 		&-list{
@@ -789,4 +809,83 @@ a{
 	&__custom-controls-container{
 
 	} 
+}
+
+.go-back{
+	text-align: center;
+	&__item{
+		position: relative;
+		display: inline-block;
+		min-height: 206px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px #ccc;
+		border:1px solid #ccc;
+		width: 100%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		overflow: hidden;
+		@media (--tablet){
+			padding: 0;
+		}
+		&:before{
+			content:"";
+			background-image: url(../images/gallery-icon.png);
+			position: static;
+			width: 207px;
+			height: 162px;
+			background-position: top center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			@media (--tablet){
+				position: absolute;
+				top:10%;
+				left: 2%;
+			}
+
+		}
+		&:after{
+			content:"";
+			background-image: url(../images/gallery-icon.png);
+			position: static;
+			width: 207px;
+			height: 162px;
+			background-position: top center;
+			margin-left: auto;
+			margin-right: auto;
+			opacity: .2;
+			background-repeat: no-repeat;
+			background-size: cover;
+			@media (--tablet){
+				position: absolute;
+				bottom:-30%;
+				right: -14%;
+				z-index: -99999;
+			}
+		
+		}
+		@media (--tablet){
+			max-width: 467px;
+		}
+
+		&-link{
+			display: inline-block;
+			padding: .6rem 1rem;
+			background-color: var(--lightblue);
+			color:white;
+			font-family: "Roboto Slab";
+			font-size: 18px;
+			border-radius: 20px;
+			
+			@media (--tablet){
+				position: absolute;
+				top:40%;	
+			}
+			&:before{
+				content:"\f009";
+				font-family: "fontawesome";
+				padding-right: .5rem;
+			}
+		}
+	}
 }

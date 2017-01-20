@@ -14,7 +14,11 @@ jQuery(function($){
 
     $(window).load(function() { 
 
+    	//home
 
+    	$('#slider-home').flexslider({
+    		animation: "slide"
+  		});
 
 
 		$('#carousel').flexslider({
@@ -29,9 +33,8 @@ jQuery(function($){
 
 	      $('#slider').flexslider({
 	        animation: "slide",
-	        controlNav: false,
 	        animationLoop: false,
-	        slideshow: false,
+	        slideshow: true,
 	        sync: "#carousel",
 	        start: function(slider){
 	          $('body').removeClass('loading');
