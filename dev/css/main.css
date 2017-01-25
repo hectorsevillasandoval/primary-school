@@ -889,3 +889,90 @@ a{
 		}
 	}
 }
+
+/* 
+BLOG
+
+ */
+
+.blog{
+	lost-center:100%;
+	&__left{
+		@media (--tablet){
+			lost-column: 3/4;
+			padding-right: 8rem;
+			box-sizing: border-box;
+		}
+	}
+	&__right{
+		@media (--tablet){
+			lost-column: 1/4;
+		}	
+	}
+	&__item{
+		padding: 1rem 1.5rem;
+		margin-bottom: 2rem;
+		background-color: white;
+		border-radius: 8px;
+		border: 2px solid #eee;
+		box-shadow: rgb(177, 187, 191) 0px 0px 30px 0px;
+		box-sizing: border-box;
+	}
+	&__title{
+		color: var(--blue);
+		font-family: "Roboto Slab";
+	}
+	&__date{
+		font-size: 18px;
+		color: var(--gray);
+		text-transform: uppercase;
+		&:before{
+			content: "\f073";
+    		padding-right: 3.2px;
+    		padding-right: .2rem;
+    		font-family: "fontawesome";
+		}
+	}
+	&__author{
+		color: var(--yellow);
+		font-size: 16px;
+		font-style: italic;
+	}
+
+	&__recentPosts{
+		background-image: url(../images/news-board-background.png);
+		box-sizing: border-box;
+		padding: 1rem 1.2rem;
+		box-shadow: rgb(177, 187, 191) 0px 0px 30px 0px;
+		&Title{
+			font-family: "Gochi Hand";
+			color: var(--pink);
+			font-size: 22px;
+			text-align: center;
+		}
+		&List{
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+			& li{
+				margin-bottom: .8rem;
+			}
+			& a{
+				
+				color: var(--textColor);
+
+				&:hover{
+					color: var(--blue);
+				}
+				&:before{
+					    content: "\f054";
+					    font-family: "fontawesome";
+					    color: var(--blue);
+					    padding-right: .5rem;
+				}
+				
+			}
+		}
+
+	}
+}
